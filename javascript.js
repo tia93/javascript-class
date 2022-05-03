@@ -1,66 +1,50 @@
-// // class Student{
-
-// //  constructor(name,  surname, yob, gender){
-// // this.name = name;
-// // this.surname = surname;
-// // this.yob = yob;
-// // this.gender = gender;
-// //  }
-// // }
-// const grades = [6,9,7,1]
-
-// const student2 = new Student( "mirco", "faro", 1993, "m", grades);
-// console.log(student2)
-
-// function calcolarevotistudenti(student) {    
-
-//     let sum = 0;
-//     for (let i= 0; i < student.gradeArray.length; i++) {
-//         const grade = student.gradeArray[i];
-
-//         sum = sum + grade;
-//     }
-
-//     const mean = sum / student.gradeArray.length
-
-//     return mean;
+// const student1 = {
+//   name: 'Mirco',
+//   surname: 'Faro',
+//   yob: 1993,
+//   gender: 'm',
+//   gradesArray: grades
 // }
 
-// console.log(calcolarevotistudenti(student2));
+// console.log(student1);
 
 
-const grades = [6,9,7,1]
+// function calculateStudentMean(student){
 
-const student2 = new Student( "mirco", "faro", 1993, "m", grades);
+//   let sum = 0;
+//   for (let i = 0; i < student.gradesArray.length; i++) {
+//     const grade = student.gradesArray[i];
+//     sum = sum + grade;
+//   }
+//   const mean = sum / student.gradesArray.length;
+
+//   return mean;
+// }
+
+// console.log(calculateStudentMean(student1));
+
+const grades = [10, 7, 4, 9, 10];
+
+
+const student2 = new Student('Mirco', 'Faro', 1993, 'm', grades);
+
+
 console.log(student2);
 
-console.log(student2, student2.calculateGradeMen());
+
+console.log(student2, student2.calculateGradeMean());
 
 
-const student3 = new Student( "paolo", "faro", 1997, "m", [10,9,5]);
+const student3 = new Student("Paolo", "Foppiano", 1997, "m", [10, 9, 2]);
 
 
-console.log(student3.calculateGradeMen());
+console.log(student3.calculateGradeMean());
 
 
+console.log('età mirco', student2.calculateAge());
+console.log("età paolo", student3.calculateAge());
 
 
-console.log("età mirco" , student2.calculateAge)
-
-console.log("età paolo" , student3.calculateAge)
-
-
-console.log(student2)
-
-console.log(student3)
-
-
-
-
-
-
-
-
-
-
+console.log(student2.toString());
+console.log(student3.toString());
 
